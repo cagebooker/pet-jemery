@@ -27,6 +27,18 @@ module.exports = {
           'sass-loader', // 使用 sass-loader 处理 SCSS 文件
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images', // 將圖片輸出到 images 目錄中
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
