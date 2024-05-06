@@ -35,8 +35,8 @@ const Jemery = () => {
   return (
     <div className="jemery">
         <div className="jemery_text">我叫 杰莫里！</div>
-        <img className="jemery-hand" src={"node_modules/@kevingu/pet-jemery/public/img/meow.png"} alt="" /> 
-        <img className="jemery-slide" src={"node_modules/@kevingu/pet-jemery/public/img/Jemery.png"} alt="" />
+        <img className="jemery-hand" src="https://i.imgur.com/spE5Dwx.png" alt="" /> 
+        <img className="jemery-slide" src="https://i.imgur.com/WIbDGk6.png" alt="" />
         <div className="jemery_light"></div>
         <div className="trigger" onMouseEnter={addMeowText} onMouseLeave={removeMeowText} onClick={()=>{sayNextWord()}}></div>
     </div>

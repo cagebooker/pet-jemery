@@ -35,6 +35,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'images', // 將圖片輸出到 images 目錄中
+              publicPath: '/node_modules/@kevingu/pet-jemery/public/images/'
             },
           },
         ],
@@ -51,6 +52,12 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx'], // 导入时可以省略后缀名
+    alias: {
+      '@src': path.resolve(__dirname, 'src/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@public': path.resolve(__dirname, 'public'),
+      '@kevingu/pet-jemery': path.resolve(__dirname, 'node_modules/@kevingu/pet-jemery'),
+    }
   },
   // devServer: {
   //   contentBase: path.join(__dirname, 'dist'),
